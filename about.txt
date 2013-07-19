@@ -1,0 +1,4 @@
+Theme name:    iwrite
+ Description:   A Clean, Minimal & Responsive theme. 
+Author name:  Kunal Varma
+ Author site:   http://kunalvarma.in License:       http://licence.visualidiot.com
