@@ -21,6 +21,8 @@ body {
 body a {
 	color: #625db1;
 	text-decoration: none;
+}
+a, .profile-pic, .featured-image, .post-image, .nav-select {
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
@@ -29,10 +31,6 @@ body a {
 .profile-pic {
 	border-radius: 400px;
 	margin: 20px;
-	-webkit-transition: all 0.6s linear;
-	-moz-transition: all 0.6s linear;
-	-o-transition: all 0.6s linear;
-	-ms-transition: all 0.6s linear;
 }
 .profile-pic:hover {
 	-webkit-transform: scale(1.1);
@@ -104,10 +102,6 @@ h1.logo a:hover {
 	border-bottom: dashed 1px #625DB1;
 }
 .nav-select {
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
 	background: #797979;
 	display: none;
 }
@@ -146,6 +140,8 @@ h1.logo a:hover {
 	width: 100%;
 	background: rgba(0, 0, 0, 0.18);
 	border: none;
+	text-align: center;
+	color: #fff;
 }
 /*Posts*/
 section.posts {
@@ -180,6 +176,9 @@ h2.post-title a {
 }
 h2.post-title a:hover {
 	color: #555;
+}
+.search .post-time {
+	padding-top: 13px;
 }
 .author {
 	display: inline-block;
@@ -226,7 +225,12 @@ h2.post-title a:hover {
 	max-width: 900px;
 }
 .featured-image, .post-image {
-	margin: 10px;
+	margin-bottom: 20px;
+}
+.featured-image:hover, .post-image:hover {
+
+	-webkit-filter: grayscale(90%);
+	cursor: pointer;
 }
 .pagination a {
 	background: #fff;

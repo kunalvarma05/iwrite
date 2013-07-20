@@ -8,8 +8,9 @@
 		<?php $i = 0; while(search_results()): $i++; ?>
 		<li>
 			<article class="post">
-				<h2 class="post-title">
-					<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+				<h2 class="post-title clearfix">
+					<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" class="left"><?php echo article_title(); ?></a>
+					<time class="post-time right" itemprop="datePublished" datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
 				</h2>
 			</article>
 		</li>
