@@ -9,7 +9,7 @@
 						</header>
 						<div class="post-content" itemprop="text">
 							<?php
-							echo get_snap('post-image');
+							echo get_snap('article','post-image');
 							?>							
 							<p>
 								<?php
