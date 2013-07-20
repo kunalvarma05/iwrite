@@ -9,7 +9,7 @@
 						</header>
 						<div class="post-content" itemprop="text">
 							<?php
-							echo get_snap('article','post-image');
+							echo get_snap('article', 'post-image');
 							?>							
 							<p>
 								<?php
@@ -42,7 +42,6 @@
 				<?php endwhile; ?>
 			</ul>
 			<?php endif; ?>
-
 			<form id="comment" class="commentform wrap" method="post" action="<?php echo comment_form_url(); ?>#comment">
 				<h3 class="commentform-title">Add Comment</h3>
 				<?php echo comment_form_notifications(); ?>

@@ -15,9 +15,9 @@ Settings
 Just add these two custom fields with their Unique Id.
 
 
-##### Post Featured Image: [Type="image"] [Unique Key="90"]
+##### Post Featured Image: [Type="image"] [Unique Key="90"] [Width="600px"] [Height="400px"]
 
-##### Page Featured Image: [Type="image"] [Unique Key="91"]
+##### Page Featured Image: [Type="image"] [Unique Key="91"] [Width="600px"] [Height="400px"]
 
 
 Also these Site Variables:

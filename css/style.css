@@ -209,9 +209,10 @@ h2.post-title a:hover {
 }
 .featured-image, .post-image {
 	margin-bottom: 20px;
+	width: 600px;
+	height: 400px;
 }
 .featured-image:hover, .post-image:hover {
-
 	-webkit-filter: grayscale(90%);
 	cursor: pointer;
 }
@@ -241,7 +242,7 @@ h2.post-title a:hover {
 	border-bottom: solid 1px #ddd;
 	padding: 25px;
 	background: #ffffff;
-	border-radius: 2px;
+	border-radius: 2px;	
 }
 .commentform input {
 	background: #eee;
