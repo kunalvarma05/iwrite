@@ -3,6 +3,7 @@
 	<div class="single-post inner">	
 <article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost" id="article-<?php echo article_id(); ?>">
 						<header class="post-header">
+							<span class="word-count"><?php echo article_word_count(); ?> words</span>
 							<h2 class="post-title" itemprop="headline"><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" rel="bookmark"><?php echo article_title(); ?></a></h2>
 							<span class="author">By <?php echo article_author('real_name'); ?></span>
 						</header>
@@ -17,7 +18,7 @@
 							</p>
 
 						</div>
-						<time class="post-time" itemprop="datePublished" datetime="<?php echo date(DATE_W3C,article_time()); ?>"><?php echo relative_time(article_time()); ?></time>																			
+						<time class="post-time" itemprop="datePublished" datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>																			
 					</article>
 					</div>
 					</div>
@@ -27,7 +28,7 @@
 			<div class="comment-section inner">
 			<?php if(has_comments()): ?>
 			<ul class="commentlist">
-				<?php $i = 0; while(comments()): $i++; ?>
+				<?php while(comments()): ?>
 				<li class="comment" id="comment-<?php echo comment_id(); ?>">
 					<div class="wrap">
 						<div class="comment-head clearfix">
@@ -36,8 +37,6 @@
 						<div class="content">
 							<?php echo comment_text(); ?>
 						</div>
-
-						<span class="counter"><?php echo $i; ?></span>
 					</div>
 				</li>
 				<?php endwhile; ?>
