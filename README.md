@@ -14,10 +14,15 @@ Settings
 
 Just add these two custom fields with their Unique Id.
 
-Post Featured Image: [Type="image"] [Unique Key="90"]
-Page Featured Image: [Type="image"] [Unique Key="91"]
+
+##### Post Featured Image: [Type="image"] [Unique Key="90"]
+
+##### Page Featured Image: [Type="image"] [Unique Key="91"]
+
 
 Also these Site Variables:
 
-google_analytics: UA-XXXXXXXX-X
-footer_text: text
+
+##### google_analytics: UA-XXXXXXXX-X
+
+##### footer_text: text
