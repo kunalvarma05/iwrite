@@ -26,6 +26,14 @@ function get_snap($class = '') {
 	endif;
 }
 
+function google_analytics() {
+	return trim(site_meta('google_analytics', ''));
+}
+
+function footer_text() {
+	return trim(site_meta('footer_text'));
+}
+
 function count_words($str) {
 	return count(preg_split('/\s+/', strip_tags($str), null, PREG_SPLIT_NO_EMPTY));
 }
