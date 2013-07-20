@@ -15,7 +15,7 @@
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<script>var base =  '<?php echo theme_url(); ?>';</script>
+		<script>var base =   '<?php echo theme_url(); ?>';</script>
 		<script src="<?php echo theme_url('/js/jquery.js'); ?>"></script>		
 		<script src="<?php echo theme_url('/js/core.js'); ?>"></script>
 
@@ -67,7 +67,7 @@
 					</div>
 				</div>
 				<div class="inner clearfix">
-					<h1 class="logo left"><a href="<?php echo base_url(); ?>">Kunal Varma</a></h1>
+					<h1 class="logo left"><a href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a></h1>
 					
 				<?php if(has_menu_items()): ?>
 				<nav id="main" role="navigation" class="nav right">

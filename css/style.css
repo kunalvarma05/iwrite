@@ -30,13 +30,13 @@ a, .profile-pic, .featured-image, .post-image, .nav-select {
 }
 /*Custom*/
 .profile-pic {
-border-radius: 400px;
-margin: 20px 0;
+	border-radius: 400px;
+	margin: 20px 0;
 }
-.intro{
-	max-width:70%;
-	margin:auto;
-	font-size:18px;
+.intro {
+	max-width: 70%;
+	margin: auto;
+	font-size: 18px;
 }
 .header {
 	background: #ffffff;
@@ -68,14 +68,12 @@ margin: 20px 0;
 	margin-left: 5px;
 }
 h1.logo a {
-	background: url(../img/logo.png) no-repeat #625db1;
+	background: #625db1;
 	background-position: 49% 51%;
-	font-size: 0px !important;
-	text-indent: -9999px;
 	display: block;
-	width: 100px;
-	height: 100px;
+	padding: 41px 10px;
 	margin: auto;
+	color: #fff;
 }
 h1.logo a:hover {
 	background-color: #5550A7;
