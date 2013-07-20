@@ -228,7 +228,7 @@ h2.post-title a:hover {
 	color: #888;
 	letter-spacing: 1px;
 }
-.single-post.inner, .single-page.inner {
+.single-page.inner {
 	max-width: 900px;
 }
 /*Comments*/
