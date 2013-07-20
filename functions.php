@@ -19,19 +19,31 @@ function search_class() {
 	}
 }
 
-function get_snap($class = '') {
-	$image = article_custom_field(90);
+function get_snap($type = 'article', $class = '') {
+	$image = '';
+	switch ($type) {
+		case 'page' :
+			$image = page_custom_field(91);
+			break;
+		default :
+			$image = article_custom_field(90);
+			break;
+	}
 	if (!empty($image)) :
 		return '<img class=' . $class . ' src=' . $image . '>';
 	endif;
 }
-
 function google_analytics() {
 	return trim(site_meta('google_analytics', ''));
 }
 
 function footer_text() {
-	return trim(site_meta('footer_text'));
+	$meta = trim(site_meta('footer_text'));
+	if (empty($meta)) {
+	return 'Powered by <a href="http://anchorcms.com" class="anchor">Anchor</a> crafted by <a href="http://kunalvarma.in" class="creator">Kunal Varma</a>';	
+	}else{
+		return $meta;
+	}
 }
 
 function count_words($str) {
