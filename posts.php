@@ -11,7 +11,7 @@
 						</header>
 						<div class="post-content" itemprop="text">
 							<?php
-							echo get_snap('featured-image');
+							echo get_snap('article','featured-image');
 							?>	
 							<p>
 								<?php															

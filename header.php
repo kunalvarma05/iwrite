@@ -15,7 +15,7 @@
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<script>var base=     '<?php echo theme_url(); ?>';</script>
+		<script>var base =  '<?php echo theme_url(); ?>';</script>
 		<script src="<?php echo theme_url('/js/jquery.js'); ?>"></script>		
 		<script src="<?php echo theme_url('/js/core.js'); ?>"></script>
 
@@ -30,11 +30,10 @@
 	    <meta property="og:description" content="<?php echo site_description(); ?>">
 
 		<?php if(customised()): ?>
-		    <!-- Custom CSS -->
-    		<style><?php echo article_css(); ?></style>
-
+		    <!-- Custom CSS -->    				
+<style><?php echo article_css(); ?></style>
     		<!--  Custom Javascript -->
-    		<script><?php echo article_js(); ?></script>
+    		<script><?php echo article_js(); ?></script>		
 		<?php endif; ?>
 	</head>
 	<body class="<?php echo body_class(); ?>">
@@ -44,7 +43,7 @@
 				<nav id="mobile" role="navigation" class="nav-select">
 					<ul>
 						<?php while(menu_items()): ?>
-						<li <?php echo(menu_active()?'class="active"':''); ?>>
+						<li <?php echo(menu_active() ? 'class="active"' : ''); ?>>
 							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
 								<?php echo menu_name(); ?>
 							</a>
@@ -74,7 +73,7 @@
 				<nav id="main" role="navigation" class="nav right">
 					<ul>
 						<?php while(menu_items()): ?>
-						<li <?php echo(menu_active()?'class="active"':''); ?>>
+						<li <?php echo(menu_active() ? 'class="active"' : ''); ?>>
 							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
 								<?php echo menu_name(); ?>
 							</a>
