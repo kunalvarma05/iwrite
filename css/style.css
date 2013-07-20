@@ -62,12 +62,13 @@ a, .profile-pic, .featured-image, .post-image, .nav-select {
 	background: transparent;
 	font-size: 16px;
 	outline: none;
+	text-align: center;
 }
 .logo {
 	display: inline-block;
 	margin-left: 5px;
 }
-h1.logo a {
+h1.logo a.text {
 	background: #625db1;
 	background-position: 49% 51%;
 	display: block;
@@ -75,8 +76,13 @@ h1.logo a {
 	margin: auto;
 	color: #fff;
 }
-h1.logo a:hover {
+
+h1.logo a.text:hover {
 	background-color: #5550A7;
+}
+.logo .image img {
+	width: 170px;
+	height: auto;
 }
 .nav {
 	margin-top: 35px;

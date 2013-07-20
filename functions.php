@@ -19,6 +19,15 @@ function search_class() {
 	}
 }
 
+function get_site_title() {
+	$logo = site_meta('logo');
+	if (empty($logo)) {
+		return '<a href="' . base_url() . '" class="text">' . site_name() . '</a>';
+	} else {
+		return '<a href="' . base_url() . '" class="image"><img src="' . $logo . '" alt="' . site_name() . '"></a>';
+	}
+}
+
 function get_snap($type = 'article', $class = '') {
 	$image = '';
 	switch ($type) {
@@ -33,6 +42,7 @@ function get_snap($type = 'article', $class = '') {
 		return '<img class=' . $class . ' src=' . $image . '>';
 	endif;
 }
+
 function google_analytics() {
 	return trim(site_meta('google_analytics', ''));
 }
@@ -40,8 +50,8 @@ function google_analytics() {
 function footer_text() {
 	$meta = trim(site_meta('footer_text'));
 	if (empty($meta)) {
-	return 'Powered by <a href="http://anchorcms.com" class="anchor">Anchor</a> crafted by <a href="http://kunalvarma.in" class="creator">Kunal Varma</a>';	
-	}else{
+		return 'Powered by <a href="http://anchorcms.com" class="anchor">Anchor</a> crafted by <a href="http://kunalvarma.in" class="creator">Kunal Varma</a>';
+	} else {
 		return $meta;
 	}
 }
