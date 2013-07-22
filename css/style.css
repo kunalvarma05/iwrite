@@ -90,6 +90,9 @@ h1.logo a.text:hover {
 	height: auto;
 }
 /*Navigation*/
+.nav {
+	max-width: 420px;
+}
 .nav ul {
 	display: table-cell;
 	height: 100px;
@@ -226,6 +229,7 @@ h2.post-title a:hover {
 	-webkit-filter: grayscale(90%);
 	cursor: pointer;
 }
+/*Pagination*/
 .pagination a {
 	background: #fff;
 	padding: 10px;
@@ -233,6 +237,10 @@ h2.post-title a:hover {
 	display: inline-block;
 	border-radius: 2px;
 	border-bottom: solid 1px #ddd;
+}
+.pagination a:hover {
+	background: #E7E7F5;
+	border-bottom: solid 1px #CACAE9;
 }
 /*Mark Down*/
 .single-post .post-content > h1, .single-post .post-content h2, .single-post .post-content h3, .single-post .post-content h4, .single-post .post-content h5, .single-post .post-content h6 {
