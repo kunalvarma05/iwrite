@@ -85,6 +85,11 @@ h1.logo a.text {
 h1.logo a.text:hover {
 	background-color: #5550A7;
 }
+.logo .image {
+	display: table-cell;
+	height: 100px;
+	vertical-align: middle;
+}
 .logo .image img {
 	width: 170px;
 	height: auto;

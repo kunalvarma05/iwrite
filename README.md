@@ -22,6 +22,8 @@ Just add these two custom fields with their Unique Id.
 
 Also these Site Variables:
 
+##### logo: image url eg:. http://xyz.com/logo.png
+
 ##### commenting_system: Code Snippet of 3rd party commenting system
 
 ##### google_analytics: UA-XXXXXXXX-X
