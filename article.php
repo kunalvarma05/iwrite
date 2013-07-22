@@ -23,8 +23,12 @@
 					</div>
 					</div>
 					</section>
-		<?php if(comments_open()): ?>
-		<section class="comments">
+		<?php if(comments_open()): ?>		
+			<?php if(has_commeting_system() == true){ ?>
+				<section class="comments system">
+				<?php get_commenting_system(); ?>
+				</section>
+			<?php }else{ ?>			
 			<div class="comment-section inner">
 			<?php if(has_comments()): ?>
 			<ul class="commentlist">
@@ -54,6 +58,7 @@
 				
 			</form>
 </div>
+<?php } ?>
 		</section>
 		<?php endif; ?>
 

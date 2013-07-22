@@ -19,13 +19,29 @@ function search_class() {
 	}
 }
 
-function get_site_title() {
+function get_site_logo() {
 	$logo = site_meta('logo');
 	if (empty($logo)) {
 		return '<a href="' . base_url() . '" class="text">' . site_name() . '</a>';
 	} else {
 		return '<a href="' . base_url() . '" class="image"><img src="' . $logo . '" alt="' . site_name() . '"></a>';
 	}
+}
+
+function has_commeting_system() {
+	$sys = site_meta('commenting_system');
+	if (!empty($sys)) {
+		return true;
+	}else{
+		return false;
+	}
+}
+function get_commenting_system(){
+	echo site_meta('commenting_system');
+}
+
+function get_commet_count(){
+	
 }
 
 function get_snap($type = 'article', $class = '') {

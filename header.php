@@ -67,7 +67,7 @@
 					</div>
 				</div>
 				<div class="inner clearfix">
-					<h1 class="logo left"><?php echo get_site_title(); ?></h1>
+					<h1 class="logo left"><?php echo get_site_logo(); ?></h1>
 					
 				<?php if(has_menu_items()): ?>
 				<nav id="main" role="navigation" class="nav right">

@@ -1,3 +1,4 @@
+/*Pre-Req*/
 @font-face {
 	font-family: diavlo;
 	src: url("../diavlo.otf") format("opentype");
@@ -12,6 +13,7 @@ img {
 	max-width: 100%;
 	max-height: 50%;
 }
+/*Body*/
 body {
 	background: #f2f2ff;
 	font-family: diavlo;
@@ -38,6 +40,7 @@ a, .profile-pic, .featured-image, .post-image, .nav-select {
 	margin: auto;
 	font-size: 18px;
 }
+/*Header*/
 .header {
 	background: #ffffff;
 }
@@ -45,6 +48,7 @@ a, .profile-pic, .featured-image, .post-image, .nav-select {
 	max-width: 550px;
 	margin: auto;
 }
+/*Search-Bar*/
 .search-toggle img {
 	margin-top: -3px;
 }
@@ -64,6 +68,7 @@ a, .profile-pic, .featured-image, .post-image, .nav-select {
 	outline: none;
 	text-align: center;
 }
+/*Logo*/
 .logo {
 	display: inline-block;
 	margin-left: 5px;
@@ -84,9 +89,11 @@ h1.logo a.text:hover {
 	width: 170px;
 	height: auto;
 }
-.nav {
-	margin-top: 35px;
-	padding-bottom: 30px;
+/*Navigation*/
+.nav ul {
+	display: table-cell;
+	height: 100px;
+	vertical-align: middle;
 }
 .nav ul li {
 	display: inline-block;
@@ -157,7 +164,9 @@ section.posts {
 	padding: 25px;
 	background: #ffffff;
 	border-radius: 2px;
+	word-wrap: break-word;
 }
+/*Post-Header*/
 h2.post-title a {
 	font-size: 30px;
 	font-weight: normal;
@@ -179,6 +188,7 @@ h2.post-title a:hover {
 	color: #777;
 	font-weight: bold;
 }
+/*Post-Content*/
 .post-content {
 	text-align: center;
 }
@@ -187,27 +197,6 @@ h2.post-title a:hover {
 	font-size: 16px;
 	line-height: 200%;
 	letter-spacing: 1px;
-}
-.post-content > h1, h2, h3, h4, h5, h6 {
-	color: #333;
-}
-.post-content h6 {
-	font-size: 16px;
-}
-.post-content h5 {
-	font-size: 20px;
-}
-.post-content h4 {
-	font-size: 24px;
-}
-.post-content h3 {
-	font-size: 28px;
-}
-.post-content h2 {
-	font-size: 32px;
-}
-.post-content h1 {
-	font-size: 36px;
 }
 .post-content a {
 	color: #625DB1;
@@ -245,6 +234,76 @@ h2.post-title a:hover {
 	border-radius: 2px;
 	border-bottom: solid 1px #ddd;
 }
+/*Mark Down*/
+.single-post .post-content > h1, .single-post .post-content h2, .single-post .post-content h3, .single-post .post-content h4, .single-post .post-content h5, .single-post .post-content h6 {
+	color: #333;
+}
+.single-post .post-content h6 {
+	font-size: 20px;
+	margin-bottom: 35px;
+}
+.single-post .post-content h5 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.single-post .post-content h4 {
+	font-size: 28px;
+	margin-bottom: 25px;
+}
+.single-post .post-content h3 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.single-post .post-content h2 {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+.single-post .post-content h1 {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.single-post .post-content ol li {
+	list-style: lower-roman inside;
+	color: #544FA0;
+	font-weight: bold;
+}
+.single-post .post-content ul li {
+	list-style: circle inside;
+	color: #544FA0;
+}
+.single-post .post-content  ol li p, .single-post .post-content  ul li p {
+	font-weight: normal;
+	color: #444444;
+}
+.single-post .post-content blockquote {
+	font-style: italic;
+	border-left: solid 3px #B9B9EE;
+	padding: 10px 20px;
+}
+.single-post .post-content cite {
+	display: block;
+	padding: 0 5px;
+	font-weight: bold;
+}
+.single-post .post-content p, .single-post .post-content ol, .single-post .post-content ul, .single-post .post-content blockquote, .single-post .post-content code, .single-post .post-content pre {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	word-wrap: break-word;
+}
+.single-post .post-content > hr {
+	border-bottom: solid 1px #ddd;
+	margin: 30px 0;
+	display: block;
+}
+.single-post .post-content pre {
+	background: #f4f4ff;
+	padding: 20px 10px;
+}
+.single-post .post-content code {
+	font-family: monospace;
+	color: #777;
+	letter-spacing: -1px;
+}
 /*Single Post*/
 .word-count {
 	margin: 20px 0;
@@ -258,6 +317,16 @@ h2.post-title a:hover {
 	max-width: 900px;
 }
 /*Comments*/
+.comments.system {
+	max-width: 500px;
+	margin: auto;
+	margin-top: 50px;
+	background: #fff;
+	padding: 20px;
+	display: block;
+	border-radius: 2px;
+	border-bottom: solid 1px #ddd;
+}
 .commentform {
 	margin-top: 50px;
 	border-bottom: solid 1px #ddd;
@@ -401,6 +470,7 @@ h2.post-title a:hover {
 .search-query span {
 	font-weight: bold;
 }
+/*Tablet*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 	.nav {
 		display: none;
