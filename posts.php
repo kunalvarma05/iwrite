@@ -11,16 +11,15 @@
 						</header>
 						<div class="post-content" itemprop="text">
 							<?php
-							echo get_snap('article','featured-image');
+							echo get_snap('article', 'featured-image');
 							?>	
 							<p>
-								<?php															
-								echo iwrite_excerpt(article_markdown());								
+								<?php
+								echo iwrite_excerpt(strip_tags(article_markdown()));
 								 ?>
 							</p>
-
 						</div>
-						<time class="post-time" itemprop="datePublished" datetime="<?php echo date(DATE_W3C,article_time()); ?>"><?php echo relative_time(article_time()); ?></time>																			
+						<time class="post-time" itemprop="datePublished" datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>																			
 					</article>
 					<?php endwhile; ?>
 		<?php if(has_pagination()): ?>
