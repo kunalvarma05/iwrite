@@ -11,7 +11,7 @@
 }
 img {
 	max-width: 100%;
-	max-height: 50%;
+	max-height: 100%;
 }
 /*Body*/
 body {
@@ -31,10 +31,7 @@ a, .profile-pic, .featured-image, .post-image, .nav-select {
 	-ms-transition: all 0.3s linear;
 }
 /*Custom*/
-.profile-pic {
-	border-radius: 400px;
-	-webkit-border-radius: 400px;
-	-moz-border-radius: 400px;
+.profile-pic {	
 	margin: 20px 0;
 }
 .intro {
@@ -254,71 +251,71 @@ h2.post-title a:hover {
 	border-bottom: solid 1px #CACAE9;
 }
 /*Mark Down*/
-.single-post .post-content > h1, .single-post .post-content h2, .single-post .post-content h3, .single-post .post-content h4, .single-post .post-content h5, .single-post .post-content h6 {
+.post .post-content > h1, .post .post-content h2, .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
 	color: #333;
 }
-.single-post .post-content h6 {
-	font-size: 20px;
+.post .post-content h6 {
+	font-size: 16px;
 	margin-bottom: 35px;
 }
-.single-post .post-content h5 {
-	font-size: 24px;
+.post .post-content h5 {
+	font-size: 20px;
 	margin-bottom: 30px;
 }
-.single-post .post-content h4 {
-	font-size: 28px;
+.post .post-content h4 {
+	font-size: 24px;
 	margin-bottom: 25px;
 }
-.single-post .post-content h3 {
-	font-size: 32px;
+.post .post-content h3 {
+	font-size: 28px;
 	margin-bottom: 20px;
 }
-.single-post .post-content h2 {
-	font-size: 36px;
+.post .post-content h2 {
+	font-size: 32px;
 	margin-bottom: 15px;
 }
-.single-post .post-content h1 {
-	font-size: 40px;
+.post .post-content h1 {
+	font-size: 36px;
 	margin-bottom: 10px;
 }
-.single-post .post-content ol li {
+.post .post-content ol li {
 	list-style: lower-roman inside;
 	color: #544FA0;
 	font-weight: bold;
 }
-.single-post .post-content ul li {
+.post .post-content ul li {
 	list-style: circle inside;
 	color: #544FA0;
 }
-.single-post .post-content  ol li p, .single-post .post-content  ul li p {
+.post .post-content  ol li p, .post .post-content  ul li p {
 	font-weight: normal;
 	color: #444444;
 }
-.single-post .post-content blockquote {
+.post .post-content blockquote {
 	font-style: italic;
 	border-left: solid 3px #B9B9EE;
 	padding: 10px 20px;
 }
-.single-post .post-content cite {
+.post .post-content cite {
 	display: block;
 	padding: 0 5px;
 	font-weight: bold;
 }
-.single-post .post-content p, .single-post .post-content ol, .single-post .post-content ul, .single-post .post-content blockquote, .single-post .post-content code, .single-post .post-content pre {
+.post .post-content p, .post .post-content ol, .post .post-content ul, .post .post-content blockquote, .post .post-content code, .post .post-content pre {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	word-wrap: break-word;
 }
-.single-post .post-content > hr {
+.post .post-content > hr {
 	border-bottom: solid 1px #ddd;
 	margin: 30px 0;
 	display: block;
 }
-.single-post .post-content pre {
+.post .post-content pre {
 	background: #f4f4ff;
 	padding: 20px 10px;
 }
-.single-post .post-content code {
+.post .post-content code {
 	font-family: monospace;
 	color: #777;
 	letter-spacing: -1px;
