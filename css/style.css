@@ -101,7 +101,7 @@ body a {
 	color: #625db1;
 	text-decoration: none;
 }
-a, .profile-pic, .featured-image, .post-image, .nav-select {
+a, .featured-image, .post-image, .nav-select {
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
@@ -304,9 +304,7 @@ h2.post-title a:hover {
 	font-weight: bold;
 }
 .featured-image, .post-image {
-	margin-bottom: 20px;
-	width: 600px;
-	height: 400px;
+	margin-bottom: 20px;	
 }
 .featured-image:hover, .post-image:hover {
 	-webkit-filter: grayscale(90%);
