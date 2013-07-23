@@ -25,47 +25,47 @@ function get_admin_bar() {
 				<div class="navbar-inner">
 					<ul>
 						<li class="anchor-logo">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="' . theme_url("img/anchor.png") . '"></a>
+							<a target="_blank" href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="' . theme_url("img/anchor.png") . '"></a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 								<li>
-									<a href="http://anchorcms.com">AnchorCMS</a>
+									<a target="_blank" href="http://anchorcms.com">AnchorCMS</a>
 								</li>
 								<li>
-									<a href="http://anchorthemes.com">AnchorThemes</a>
+									<a target="_blank" href="http://anchorthemes.com">AnchorThemes</a>
 								</li>
 							</ul>
 						</li>
 						<li class="manage">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">iWrite</a>
+							<a target="_blank" href="#" class="dropdown-toggle" data-toggle="dropdown">iWrite</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 								<li>
-									<a href="' . full_url() . 'admin/posts">Posts</a>
+									<a target="_blank" href="' . full_url() . 'admin/posts">Posts</a>
 								</li>
 								<li>
-									<a href="' . full_url() . 'admin/pages">Pages</a>
+									<a target="_blank" href="' . full_url() . 'admin/pages">Pages</a>
 								</li>
 								<li>
-									<a href="' . full_url() . 'admin/comments">Comments</a>
+									<a target="_blank" href="' . full_url() . 'admin/comments">Comments</a>
 								</li>
 								<li>
-									<a href="' . full_url() . 'admin/categories">Categories</a>
+									<a target="_blank" href="' . full_url() . 'admin/categories">Categories</a>
 								</li>
 								<li>
-									<a href="' . full_url() . 'admin/users">Users</a>
+									<a target="_blank" href="' . full_url() . 'admin/users">Users</a>
 								</li>
 								<li>
-									<a href="' . full_url() . 'admin/extend">Extend</a>
+									<a target="_blank" href="' . full_url() . 'admin/extend">Extend</a>
 								</li>
 							</ul>
 						</li>
 						<li class="account">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, Kunal Varma</a>
+							<a target="_blank" href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, Kunal Varma</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 								<li>
-									<a href="' . full_url() . 'admin/users/edit/1">Profile</a>
+									<a target="_blank" href="' . full_url() . 'admin/users/edit/1">Profile</a>
 								</li>
 								<li>
-									<a href="' . full_url() . 'admin/logout">Logout</a>
+									<a target="_blank" href="' . full_url() . 'admin/logout">Logout</a>
 								</li>
 							</ul>
 						</li>
@@ -78,7 +78,7 @@ function get_admin_bar() {
 function get_post_edit() {
 	if (user_authed() == true) {
 		$id = article_id();
-		echo '<a href="' . full_url() . 'admin/posts/edit/' . $id . '" class="edit-post" target="_blank">Edit</a>';
+		echo '<a target="_blank" href="' . full_url() . 'admin/posts/edit/' . $id . '" class="edit-post" target="_blank">Edit</a>';
 	}
 }
 
@@ -136,7 +136,7 @@ function google_analytics() {
 function footer_text() {
 	$meta = trim(site_meta('footer_text'));
 	if (empty($meta)) {
-		return 'Powered by <a href="http://anchorcms.com" class="anchor">Anchor</a> crafted by <a href="http://kunalvarma.in" class="creator">Kunal Varma</a>';
+		return 'Powered by <a target="_blank" href="http://anchorcms.com" class="anchor">Anchor</a> crafted by <a target="_blank" href="http://kunalvarma.in" class="creator">Kunal Varma</a>';
 	} else {
 		return $meta;
 	}
@@ -173,14 +173,6 @@ function relative_time($date) {
 			return $rounded . ' ' . pluralise($rounded, $title) . ' ago';
 		}
 	}
-}
-
-function twitter_account() {
-	return site_meta('twitter', 'idiot');
-}
-
-function twitter_url() {
-	return 'https://twitter.com/' . twitter_account();
 }
 
 function iwrite_excerpt($string, $word_limit = 75) {
