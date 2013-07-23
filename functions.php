@@ -36,7 +36,7 @@ function get_admin_bar() {
 							</ul>
 						</li>
 						<li class="manage">
-							<a target="_blank" href="#" class="dropdown-toggle" data-toggle="dropdown">iWrite</a>
+							<a target="_blank" href="#" class="dropdown-toggle" data-toggle="dropdown">'.site_name().'</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 								<li>
 									<a target="_blank" href="' . full_url() . 'admin/posts">Posts</a>
