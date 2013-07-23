@@ -3,6 +3,9 @@
 	<div class="single-post inner">	
 <article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost" id="article-<?php echo article_id(); ?>">
 						<header class="post-header">
+							<?php
+							get_post_edit(); 
+							?>
 							<span class="word-count"><?php echo article_word_count(); ?> words</span>
 							<h2 class="post-title" itemprop="headline"><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" rel="bookmark"><?php echo article_title(); ?></a></h2>
 							<span class="author">By <?php echo article_author('real_name'); ?></span>							
