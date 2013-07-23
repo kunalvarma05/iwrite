@@ -1,6 +1,6 @@
 # iWrite
 
-#### iWrite is a Clean, Minimal & Responsive theme for AnchorCms. Supports Featured Image for both Posts & Pages, 3rd Part Commenting System Integration(Disqus, Livefyre, etc), Google Analytics, Custom Logo, Custom Footer Text. Wider Pages for better content presentation.
+#### iWrite is a Clean, Minimal & Responsive theme for AnchorCms. Supports Featured Image for both Posts & Pages, 3rd Part Commenting System Integration(Disqus, Livefyre, etc), Google Analytics, Custom Logo, Custom Footer Text, Edit Post link for logged in user on the frontend and a frontend Admin Bar. Wider Pages for better content presentation.
 
 Author: Kunal Varma
 
