@@ -6,8 +6,11 @@
 					<?php while(posts()): ?>
 					<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 						<header class="post-header">
+							<?php
+							get_post_edit(); 
+							?>
 							<h2 class="post-title" itemprop="headline"><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" rel="bookmark"><?php echo article_title(); ?></a></h2>
-							<span class="author">By <?php echo article_author('real_name'); ?></span>
+							<span class="author">By <?php echo article_author('real_name'); ?></span>							
 						</header>
 						<div class="post-content" itemprop="text">
 							<?php

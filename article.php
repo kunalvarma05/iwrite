@@ -5,7 +5,7 @@
 						<header class="post-header">
 							<span class="word-count"><?php echo article_word_count(); ?> words</span>
 							<h2 class="post-title" itemprop="headline"><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" rel="bookmark"><?php echo article_title(); ?></a></h2>
-							<span class="author">By <?php echo article_author('real_name'); ?></span>
+							<span class="author">By <?php echo article_author('real_name'); ?></span>							
 						</header>
 						<div class="post-content" itemprop="text">
 							<?php

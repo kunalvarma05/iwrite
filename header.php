@@ -36,7 +36,8 @@
     		<script><?php echo article_js(); ?></script>		
 		<?php endif; ?>
 	</head>
-	<body class="<?php echo body_class(); ?>">
+	<body class="<?php echo body_class(); echo admin_class(); ?>">
+		<?php get_admin_bar(); ?>
 		<div class="main">
 			<div class="inner">
 				<?php if(has_menu_items()): ?>

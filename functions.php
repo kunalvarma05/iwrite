@@ -19,6 +19,75 @@ function search_class() {
 	}
 }
 
+function get_admin_bar() {
+	if (user_authed() == true) {
+		echo '<div class="navbar">
+				<div class="navbar-inner">
+					<ul>
+						<li class="anchor-logo">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="' . theme_url("img/anchor.png") . '"></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li>
+									<a href="http://anchorcms.com">AnchorCMS</a>
+								</li>
+								<li>
+									<a href="http://anchorthemes.com">AnchorThemes</a>
+								</li>
+							</ul>
+						</li>
+						<li class="manage">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">iWrite</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li>
+									<a href="' . full_url() . 'admin/posts">Posts</a>
+								</li>
+								<li>
+									<a href="' . full_url() . 'admin/pages">Pages</a>
+								</li>
+								<li>
+									<a href="' . full_url() . 'admin/comments">Comments</a>
+								</li>
+								<li>
+									<a href="' . full_url() . 'admin/categories">Categories</a>
+								</li>
+								<li>
+									<a href="' . full_url() . 'admin/users">Users</a>
+								</li>
+								<li>
+									<a href="' . full_url() . 'admin/extend">Extend</a>
+								</li>
+							</ul>
+						</li>
+						<li class="account">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, Kunal Varma</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li>
+									<a href="' . full_url() . 'admin/users/edit/1">Profile</a>
+								</li>
+								<li>
+									<a href="' . full_url() . 'admin/logout">Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>';
+	}
+}
+
+function get_post_edit() {
+	if (user_authed() == true) {
+		$id = article_id();
+		echo '<a href="' . full_url() . 'admin/posts/edit/' . $id . '" class="edit-post" target="_blank">Edit</a>';
+	}
+}
+
+function admin_class() {
+	if (user_authed() == true) {
+		return " logged_in";
+	}
+}
+
 function get_site_logo() {
 	$logo = site_meta('logo');
 	if (empty($logo)) {
@@ -32,16 +101,17 @@ function has_commeting_system() {
 	$sys = site_meta('commenting_system');
 	if (!empty($sys)) {
 		return true;
-	}else{
+	} else {
 		return false;
 	}
 }
-function get_commenting_system(){
+
+function get_commenting_system() {
 	echo site_meta('commenting_system');
 }
 
-function get_commet_count(){
-	
+function get_commet_count() {
+
 }
 
 function get_snap($type = 'article', $class = '') {
